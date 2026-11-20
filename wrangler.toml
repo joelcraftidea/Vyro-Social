@@ -1,0 +1,9 @@
+
+name = "vyro-backend"
+main = "src/index.js"
+compatibility_date = "2026-11-20"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "vyro-database"
+database_id = "5ea46871-b172-4ced-a85d-c5d800a9c33d"

@@ -330,11 +330,7 @@ export default {
 
       return json({ error: "Route not found." }, 404);
 
-    } catch (error) {
-        console.error("VYRO ERROR:", error);
-      return json({
-        error: "The server could not complete the request."
-      }, 500);
-    }
-  }
-};
+    return json({
+  error: "VYRO registration error",
+  details: String(error.message || error)
+}, 500);
